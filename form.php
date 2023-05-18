@@ -11,18 +11,18 @@
         <input type="submit">
     </form>
     <?php
-        $match = "/non/i";
+        $match = "/@/i";
         if($_SERVER["REQUEST_METHOD"] == "POST")
         {
-            $name = $_POST["fname"];
-            if(empty($name))
+            $mail = $_GET["mail"];
+            $pass = $_GET["pass"]
+            if(empty($mail) or empty($pass))
             {
-                echo " name is null";
+                echo " name or pass is null";
             }
             else
             {
-                echo trim($name);
-                echo "<br>We have find matches string non at first of".$name," result is: ".preg_match($match, $name);
+                echo "Your mail is: " .$name "and your pass is: " .$pass;
             }
         }
     ?>
