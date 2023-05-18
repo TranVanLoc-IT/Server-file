@@ -12,7 +12,7 @@
     </form>
     <?php
         $match = "/@/i";
-        if($_SERVER["REQUEST_METHOD"] == "POST")
+        if($_SERVER["REQUEST_METHOD"] == "GET")
         {
             $mail = $_GET["mail"];
             $pass = $_GET["pass"];
