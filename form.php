@@ -22,7 +22,7 @@
             }
             else
             {
-                echo "Your mail is: " .$name. "and your pass is: " .$pass;
+                echo "Your mail is: " .$mail. "and your pass is: " .$pass;
             }
         }
     ?>
