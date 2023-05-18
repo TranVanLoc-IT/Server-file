@@ -15,14 +15,14 @@
         if($_SERVER["REQUEST_METHOD"] == "POST")
         {
             $mail = $_GET["mail"];
-            $pass = $_GET["pass"]
-            if(empty($mail) or empty($pass))
+            $pass = $_GET["pass"];
+            if(empty($mail) || empty($pass))
             {
                 echo " name or pass is null";
             }
             else
             {
-                echo "Your mail is: " .$name "and your pass is: " .$pass;
+                echo "Your mail is: " .$name. "and your pass is: " .$pass;
             }
         }
     ?>
